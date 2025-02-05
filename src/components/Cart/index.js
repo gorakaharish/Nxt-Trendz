@@ -6,6 +6,7 @@ import CartListView from '../CartListView'
 import CartSummary from '../CartSummary'
 
 import './index.css'
+import { Component } from 'react'
 
 const Cart = () => (
   <CartContext.Consumer>
