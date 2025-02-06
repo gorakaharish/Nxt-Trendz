@@ -4,6 +4,21 @@
   min-height: 75vh;
 }
 
+.remove-all-btn{
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+}
+
 @media screen and (min-width: 768px) {
   .cart-container {
     min-height: 90vh;
