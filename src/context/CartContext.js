@@ -1,4 +1,18 @@
-import React from 'react'
+// import React from 'react'
+
+// const CartContext = React.createContext({
+//   cartList: [],
+//   removeAllCartItems: () => {},
+//   addCartItem: () => {},
+//   removeCartItem: () => {},
+//   incrementCartItemQuantity: () => {},
+//   decrementCartItemQuantity: () => {},
+// })
+
+// export default CartContext
+
+
+import React from 'react';
 
 const CartContext = React.createContext({
   cartList: [],
@@ -7,6 +21,6 @@ const CartContext = React.createContext({
   removeCartItem: () => {},
   incrementCartItemQuantity: () => {},
   decrementCartItemQuantity: () => {},
-})
+});
 
-export default CartContext
+export default CartContext;
