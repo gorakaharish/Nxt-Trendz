@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import {BsSearch} from 'react-icons/bs'
 
 import './index.css'
@@ -113,5 +115,28 @@ const FiltersGroup = props => {
     </div>
   )
 }
+FiltersGroup.propTypes = {
+  ratingsList: PropTypes.arrayOf(
+    PropTypes.shape({
+      ratingId: PropTypes.number.isRequired,
+      imageUrl: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  changeRating: PropTypes.func.isRequired,
+  activeRatingId: PropTypes.number.isRequired,
+  categoryOptions: PropTypes.arrayOf(
+    PropTypes.shape({
+      categoryId: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  changeCategory: PropTypes.func.isRequired,
+  activeCategoryId: PropTypes.number.isRequired,
+  enterSearchInput: PropTypes.func.isRequired,
+  changeSearchInput: PropTypes.func.isRequired,
+  searchInput: PropTypes.string.isRequired,
+  clearFilters: PropTypes.func.isRequired,
+}
 
 export default FiltersGroup
+
