@@ -31,7 +31,7 @@ body {
   }
 }
 
-@media (max-width: 360px) {  /* Extra Small Phones */
+@media (min-width: 360px) and (max-width: 470px) {  /* Extra Small Phones */
   body {
     padding-top: 150px;
   }
